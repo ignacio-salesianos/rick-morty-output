@@ -1,0 +1,8 @@
+<section class="card" style="max-width: 320px">
+    <img [src]="character()?.image" class="card-img-top" alt="...">
+    <div class="card-body">
+        <h4 class="card-title">{{character()?.name}}</h4>
+        <p class="card-text">{{character()?.species}}</p>
+        <button type="button" class="btn btn-primary" (click)="emitCharacterClicked()">Ver detalle</button>
+    </div>
+</section>
